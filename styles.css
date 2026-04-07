@@ -423,6 +423,279 @@ td.wt {
   border: 1px solid var(--yellow);
 }
 
+/* ── how it works page ── */
+.how-header {
+  padding: 48px 40px 40px;
+  border-bottom: 3px solid var(--black);
+}
+
+.how-header-inner {
+  max-width: 700px;
+}
+
+.how-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: clamp(32px, 5vw, 48px);
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.how-subtitle {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.how-invest-box {
+  background: var(--black);
+  color: var(--white);
+  padding: 24px 32px;
+  display: inline-block;
+}
+
+.invest-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: 4px;
+}
+
+.invest-val {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  color: var(--yellow);
+  line-height: 1;
+}
+
+.invest-shares {
+  font-size: 13px;
+  color: #999;
+  margin-top: 4px;
+}
+
+/* ── step blocks ── */
+.how-step {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  border-bottom: 3px solid var(--black);
+}
+
+.how-step.last {
+  border-bottom: none;
+}
+
+.step-marker {
+  border-right: 3px solid var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 36px;
+}
+
+.step-num {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  color: var(--red);
+  line-height: 1;
+}
+
+.step-line {
+  width: 2px;
+  flex: 1;
+  background: #ddd;
+  margin-top: 16px;
+}
+
+.step-content {
+  padding: 36px 40px;
+}
+
+.step-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-bottom: 16px;
+  color: var(--black);
+}
+
+.step-body p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  max-width: 640px;
+}
+
+.step-body p:last-child {
+  margin-bottom: 0;
+}
+
+.step-list {
+  list-style: none;
+  margin: 12px 0;
+  max-width: 640px;
+}
+
+.step-list li {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  padding: 6px 0 6px 20px;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+
+.step-list li:last-child {
+  border-bottom: none;
+}
+
+.step-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 6px;
+  height: 6px;
+  background: var(--red);
+}
+
+/* step aside boxes */
+.step-aside {
+  margin-top: 20px;
+  padding: 16px 20px;
+  background: var(--gray);
+  border-left: 3px solid var(--black);
+  max-width: 480px;
+}
+
+.aside-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: 4px;
+}
+
+.aside-val {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--black);
+}
+
+.aside-detail {
+  font-size: 12px;
+  color: #888;
+  margin-top: 4px;
+}
+
+/* step example boxes */
+.step-example {
+  margin-top: 20px;
+  padding: 20px 24px;
+  background: #fffde7;
+  border-left: 3px solid var(--yellow);
+  max-width: 640px;
+}
+
+.example-label {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #9a6700;
+  margin-bottom: 8px;
+}
+
+.example-body p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.example-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── allocation grid ── */
+.allocation-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2px;
+  margin-top: 20px;
+  border: 3px solid var(--black);
+}
+
+.alloc-item {
+  padding: 20px 16px;
+  text-align: center;
+}
+
+.alloc-segment {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.alloc-name {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.alloc-pct {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1;
+  color: var(--black);
+}
+
+.alloc-dollars {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--black);
+  margin-top: 4px;
+}
+
+.alloc-detail {
+  font-size: 11px;
+  color: #888;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+
+.alloc-blue  { background: #e8f0fe; }
+.alloc-blue .alloc-segment { color: var(--blue); }
+.alloc-red   { background: #fce8e8; }
+.alloc-red .alloc-segment { color: var(--red); }
+.alloc-black { background: #f0f0f0; }
+.alloc-black .alloc-segment { color: var(--black); }
+.alloc-darkred { background: #fef0ec; }
+.alloc-darkred .alloc-segment { color: var(--darkred); }
+.alloc-gray  { background: #fafafa; }
+.alloc-gray .alloc-segment { color: var(--mid); }
+
 /* ── disclaimer ── */
 .disclaimer {
   background: var(--gray);
@@ -469,6 +742,10 @@ footer {
   .summary-stat:nth-child(5) { border-top: 3px solid var(--black); }
   .segment-header { padding: 16px 20px; flex-direction: column; align-items: flex-start; gap: 4px; }
   .totals-grid { grid-template-columns: repeat(3, 1fr); }
+  .how-header { padding: 32px 20px 28px; }
+  .how-step { grid-template-columns: 60px 1fr; }
+  .step-content { padding: 28px 20px; }
+  .allocation-grid { grid-template-columns: repeat(3, 1fr); }
   .total-item:nth-child(4),
   .total-item:nth-child(5) { grid-column: auto; }
   footer { flex-direction: column; text-align: center; }
@@ -482,4 +759,7 @@ footer {
   .totals-grid { grid-template-columns: 1fr 1fr; }
   .total-item { padding: 20px 16px; }
   .total-val.big { font-size: 28px; }
+  .allocation-grid { grid-template-columns: 1fr 1fr; }
+  .how-step { grid-template-columns: 48px 1fr; }
+  .step-num { font-size: 24px; }
 }

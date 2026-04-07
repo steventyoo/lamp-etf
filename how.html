@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How It Works — LAMP ETF</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Subversive Capital</div>
+  <div class="nav-links">
+    <a href="index.html">Basket</a>
+    <a href="how.html" class="active">How It Works</a>
+  </div>
+  <div class="nav-icons">
+    <div class="nav-icon">&#x1D54F;</div>
+    <div class="nav-icon">in</div>
+    <div class="nav-icon">&#9654;</div>
+  </div>
+</nav>
+
+<div class="ticker-tape">
+  <div class="ticker-inner" id="ticker-inner"></div>
+</div>
+
+<!-- ── PAGE HEADER ── -->
+<section class="how-header">
+  <div class="how-header-inner">
+    <div class="how-title">How It Works</div>
+    <div class="how-subtitle">Follow $10,000 from your brokerage account through the full LAMP lifecycle — swap execution, daily pricing, contract resolution, and redemption.</div>
+    <div class="how-invest-box">
+      <div class="invest-label">Your investment</div>
+      <div class="invest-val">$10,000</div>
+      <div class="invest-shares">~161 shares at $61.87 NAV</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── STEP 1 ── -->
+<section class="how-step">
+  <div class="step-marker">
+    <div class="step-num">01</div>
+    <div class="step-line"></div>
+  </div>
+  <div class="step-content">
+    <div class="step-title">Buy LAMP shares on exchange</div>
+    <div class="step-body">
+      <p>You place a buy order for ~$10,000 of LAMP through any brokerage — Schwab, Fidelity, Interactive Brokers, Robinhood. LAMP trades on a national securities exchange like any other ETF.</p>
+      <p>At a NAV of $61.87 per share, $10,000 buys you approximately <strong>161 shares</strong>.</p>
+      <p>No crypto wallet. No prediction market account. No KYC beyond your existing brokerage. You're buying a regulated ETF share.</p>
+    </div>
+    <div class="step-aside">
+      <div class="aside-label">What you own</div>
+      <div class="aside-val">161 shares of LAMP</div>
+      <div class="aside-detail">Listed on NYSE &middot; CUSIP assigned &middot; Standard T+1 settlement</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── STEP 2 ── -->
+<section class="how-step">
+  <div class="step-marker">
+    <div class="step-num">02</div>
+    <div class="step-line"></div>
+  </div>
+  <div class="step-content">
+    <div class="step-title">Fund enters Total Return Swap</div>
+    <div class="step-body">
+      <p>The LAMP fund does not buy prediction market contracts directly. Instead, it enters into a <strong>Total Return Swap (TRS)</strong> with institutional swap counterparties — Susquehanna International Group (SIG) and Clear Street.</p>
+      <p>The TRS gives the fund synthetic exposure to the 17-contract reference basket. The counterparties handle all on-chain execution, custody, and settlement on Polymarket's CLOB and Kalshi's order book.</p>
+      <p>The fund holds cash collateral. The swap counterparties bear the execution risk. Your shares are backed by a traditional finance instrument — not crypto tokens.</p>
+    </div>
+    <div class="step-aside">
+      <div class="aside-label">Instrument</div>
+      <div class="aside-val">Total Return Swap &middot; Cash Settled</div>
+      <div class="aside-detail">Counterparties: SIG + Clear Street &middot; TIDAL approval confirmed</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── STEP 3 ── -->
+<section class="how-step">
+  <div class="step-marker">
+    <div class="step-num">03</div>
+    <div class="step-line"></div>
+  </div>
+  <div class="step-content">
+    <div class="step-title">Your $10K maps to the basket</div>
+    <div class="step-body">
+      <p>Your $10,000 is allocated proportionally across the four basket segments, weighted by liquidity depth and open interest. Here's exactly where your money goes:</p>
+    </div>
+
+    <div class="allocation-grid">
+      <div class="alloc-item alloc-blue">
+        <div class="alloc-segment">Segment A</div>
+        <div class="alloc-name">2028 Presidential</div>
+        <div class="alloc-pct">52%</div>
+        <div class="alloc-dollars">$5,200</div>
+        <div class="alloc-detail">Dem Nominee &middot; Rep Nominee &middot; Pres Winner &middot; Party Winner &middot; Trump endorsement</div>
+      </div>
+      <div class="alloc-item alloc-red">
+        <div class="alloc-segment">Segment B</div>
+        <div class="alloc-name">2026 Midterms</div>
+        <div class="alloc-pct">18%</div>
+        <div class="alloc-dollars">$1,800</div>
+        <div class="alloc-detail">House control &middot; Senate control &middot; Balance of Power &middot; Midterms as scheduled</div>
+      </div>
+      <div class="alloc-item alloc-black">
+        <div class="alloc-segment">Segment C</div>
+        <div class="alloc-name">Macro / Policy</div>
+        <div class="alloc-pct">14%</div>
+        <div class="alloc-dollars">$1,400</div>
+        <div class="alloc-detail">Powell / Fed Chair &middot; FOMC rate decisions &middot; SCOTUS vacancy &middot; Recession 2026</div>
+      </div>
+      <div class="alloc-item alloc-darkred">
+        <div class="alloc-segment">Segment D</div>
+        <div class="alloc-name">Geopolitical</div>
+        <div class="alloc-pct">8%</div>
+        <div class="alloc-dollars">$800</div>
+        <div class="alloc-detail">Iran conflict &middot; Ceasefire &middot; Hormuz &middot; Ukraine &middot; 55% liquidity haircut applied</div>
+      </div>
+      <div class="alloc-item alloc-gray">
+        <div class="alloc-segment">Reserve</div>
+        <div class="alloc-name">Cash + Fees</div>
+        <div class="alloc-pct">8%</div>
+        <div class="alloc-dollars">$800</div>
+        <div class="alloc-detail">Expense ratio (0.48%) &middot; Swap financing costs &middot; Cash collateral buffer</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── STEP 4 ── -->
+<section class="how-step">
+  <div class="step-marker">
+    <div class="step-num">04</div>
+    <div class="step-line"></div>
+  </div>
+  <div class="step-content">
+    <div class="step-title">Daily NAV marking</div>
+    <div class="step-body">
+      <p>Every trading day, the fund calculates a new Net Asset Value from composite mid prices across Polymarket and Kalshi.</p>
+      <p>Your 161 shares reflect the weighted average price of all 17 contracts. When prediction markets move — a candidate surges, a policy shifts, a conflict escalates — your NAV moves with it.</p>
+    </div>
+    <div class="step-example">
+      <div class="example-label">Example</div>
+      <div class="example-body">
+        <p>Democrats are currently priced at 86&cent; to win the House in 2026. If that price rises to 92&cent; overnight, the House Control position (5.4% of your basket) gains ~7%. On your $540 exposure to that contract, that's roughly <strong>+$38</strong> to your NAV.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── STEP 5 ── -->
+<section class="how-step">
+  <div class="step-marker">
+    <div class="step-num">05</div>
+    <div class="step-line"></div>
+  </div>
+  <div class="step-content">
+    <div class="step-title">Contracts resolve</div>
+    <div class="step-body">
+      <p>Each prediction market contract is binary. When the event occurs (or doesn't), the contract pays out:</p>
+      <ul class="step-list">
+        <li><strong>YES = $1.00</strong> — the event happened</li>
+        <li><strong>NO = $0.00</strong> — the event did not happen</li>
+      </ul>
+      <p>Resolution is determined by a triple-source oracle system:</p>
+      <ul class="step-list">
+        <li><strong>Elections:</strong> AP, Fox News, NBC must agree</li>
+        <li><strong>Macro/Policy:</strong> Fed.gov, official government sources</li>
+        <li><strong>Geopolitical:</strong> Major wire services + government confirmation</li>
+      </ul>
+    </div>
+    <div class="step-example">
+      <div class="example-label">Example &mdash; your $540 in House Control</div>
+      <div class="example-body">
+        <p>You have exposure at 86&cent; (Democrats favored). If Democrats win the House in November 2026, the contract resolves at $1.00. Your $540 exposure becomes worth <strong>$628</strong> — a gain of <strong>$88</strong> (16.3% return on that position).</p>
+        <p>If Republicans win, the contract resolves at $0.00 on the Democrat side. That $540 goes to zero. But the Republican side of other basket positions may offset.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── STEP 6 ── -->
+<section class="how-step">
+  <div class="step-marker">
+    <div class="step-num">06</div>
+    <div class="step-line"></div>
+  </div>
+  <div class="step-content">
+    <div class="step-title">Monthly rebalance</div>
+    <div class="step-body">
+      <p>At the end of each month, the fund rebalances the basket:</p>
+      <ul class="step-list">
+        <li><strong>Resolved contracts</strong> are removed and replaced with new high-liquidity markets</li>
+        <li><strong>Weights are recalculated</strong> based on current open interest and liquidity depth</li>
+        <li><strong>New contracts</strong> may be added as new prediction markets gain volume</li>
+      </ul>
+      <p>This keeps the basket current, liquid, and representative of the highest-conviction crowd intelligence available.</p>
+    </div>
+    <div class="step-aside">
+      <div class="aside-label">Rebalance window</div>
+      <div class="aside-val">Monthly &middot; Last trading day</div>
+      <div class="aside-detail">Weights recalculated from live OI + volume &middot; Minimum $1M combined liquidity threshold</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── STEP 7 ── -->
+<section class="how-step last">
+  <div class="step-marker">
+    <div class="step-num">07</div>
+  </div>
+  <div class="step-content">
+    <div class="step-title">Redemption</div>
+    <div class="step-body">
+      <p>You have two ways to exit your position:</p>
+      <ul class="step-list">
+        <li><strong>Secondary market:</strong> Sell your LAMP shares on the exchange at any time during market hours, just like any ETF. Liquidity depends on market maker spreads.</li>
+        <li><strong>NAV redemption:</strong> Redeem directly at NAV through quarterly redemption windows with 30-day advance notice. This matches the real liquidity profile of the underlying prediction market contracts.</li>
+      </ul>
+    </div>
+    <div class="step-aside">
+      <div class="aside-label">Redemption schedule</div>
+      <div class="aside-val">Quarterly &middot; 30-day notice</div>
+      <div class="aside-detail">March 31 &middot; June 30 &middot; September 30 &middot; December 31</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── DISCLAIMER ── -->
+<div class="disclaimer">
+  <div class="disclaimer-inner">
+    <h3>Important Disclosures</h3>
+    <p>LAMP is a reference instrument for institutional purposes only. This is not a registered investment product, a prospectus, or an offer to sell securities. Prediction market positions are not securities under applicable law. The $10,000 example is for illustrative purposes only and does not represent a guarantee of returns or availability. Past performance and crowd accuracy are not indicative of future results. All volume figures sourced from Polymarket and Kalshi as of April 6, 2026. For qualified institutional investors only. Subversive Capital &middot; 2026.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Subversive Capital</div>
+  <div class="footer-links">
+    <a href="index.html">Basket</a>
+    <a href="how.html">How It Works</a>
+    <a href="#">Methodology</a>
+    <a href="#">Contact Us</a>
+  </div>
+  <div class="footer-copy">&copy; 2026 Subversive Capital &middot; All rights reserved</div>
+</footer>
+
+<script src="ticker.js"></script>
+</body>
+</html>
