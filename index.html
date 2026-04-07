@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LAMP ETF — Subversive Capital</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Subversive Capital</div>
+  <div class="nav-links">
+    <a href="#" class="active">Home</a>
+    <a href="#etfs">Our ETFs</a>
+    <a href="#how">How It Works</a>
+    <a href="#">In the News</a>
+    <a href="#">Contact Us</a>
+  </div>
+  <div class="nav-icons">
+    <div class="nav-icon">𝕏</div>
+    <div class="nav-icon">in</div>
+    <div class="nav-icon">▶</div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-eyebrow">Subversive Capital · Est. 2026</div>
+  <div class="hero-line1">Invest like the</div>
+  <div class="hero-line1"><span class="hero-highlight">crowd knows</span></div>
+  <p class="hero-sub">The world's first ETF built on prediction market intelligence. Trade the wisdom of 840,000 monthly traders across politics, elections, and geopolitical events.</p>
+  <div class="hero-cta-row">
+    <button class="btn-primary" onclick="document.getElementById('etfs').scrollIntoView({behavior:'smooth'})">View Our ETF</button>
+    <button class="btn-secondary" onclick="document.getElementById('how').scrollIntoView({behavior:'smooth'})">How It Works</button>
+  </div>
+</section>
+
+<div class="ticker-tape">
+  <div class="ticker-inner" id="ticker-inner">
+    <!-- populated by ticker.js -->
+  </div>
+</div>
+
+<div class="stats-strip">
+  <div class="strip-stat"><div class="strip-val">$2.86B</div><div class="strip-label">Basket volume verified</div></div>
+  <div class="strip-stat"><div class="strip-val">17</div><div class="strip-label">Active contracts</div></div>
+  <div class="strip-stat"><div class="strip-val">$2.2B</div><div class="strip-label">Monthly politics liquidity</div></div>
+  <div class="strip-stat"><div class="strip-val">0.48%</div><div class="strip-label">Expense ratio</div></div>
+</div>
+
+<div id="etfs">
+  <div class="section-header"><h2>Our ETFs</h2></div>
+  <div class="etfs-grid">
+
+    <div class="etf-card">
+      <div class="etf-ticker-block">
+        <div>
+          <div class="ticker-badge tb-blue">LAMP</div>
+          <div class="ticker-live"><div class="live-dot"></div>Live pricing</div>
+        </div>
+        <div class="nav-block">
+          <div class="nav-label">NAV</div>
+          <div class="nav-price" id="nav-price">$61.87</div>
+          <div class="nav-change" id="nav-change">▼ −0.83% today</div>
+        </div>
+      </div>
+      <div class="etf-body">
+        <div class="etf-name">Subversive Political Intelligence ETF</div>
+        <p class="etf-desc">LAMP tracks a liquidity-weighted index of the highest-volume political prediction market contracts across Polymarket and Kalshi. Holdings span the 2028 presidential cycle, 2026 midterms, Federal Reserve policy, and geopolitical event contracts — weighted by open interest and rebalanced monthly.</p>
+        <div class="etf-stats">
+          <div class="stat-item"><div class="stat-l">AUM</div><div class="stat-v">$4.8B</div></div>
+          <div class="stat-item"><div class="stat-l">Expense ratio</div><div class="stat-v">0.48%</div></div>
+          <div class="stat-item"><div class="stat-l">Reference vol</div><div class="stat-v">$2.86B</div></div>
+          <div class="stat-item"><div class="stat-l">Holdings</div><div class="stat-v">17</div></div>
+          <div class="stat-item"><div class="stat-l">Rebalance</div><div class="stat-v">Monthly</div></div>
+        </div>
+        <a href="#" class="btn-learn">Learn more</a>
+      </div>
+    </div>
+
+    <div class="segments-grid">
+      <div class="segment-card">
+        <div class="seg-label blue">Segment A · 49%</div>
+        <div class="seg-title">2028 Presidential</div>
+        <div class="seg-desc">Dem Nominee · Rep Nominee · Presidential Winner · Party winner · Trump endorsement</div>
+        <div class="seg-vol blue">$1.93B</div>
+        <div class="seg-vol-label">combined vol</div>
+      </div>
+      <div class="segment-card">
+        <div class="seg-label red">Segment B · 16%</div>
+        <div class="seg-title">2026 Midterms</div>
+        <div class="seg-desc">House control · Senate control · Balance of Power · Midterms as scheduled</div>
+        <div class="seg-vol red">$13.5M</div>
+        <div class="seg-vol-label">combined vol</div>
+      </div>
+      <div class="segment-card">
+        <div class="seg-label black">Segment C · 14%</div>
+        <div class="seg-title">Macro / Policy</div>
+        <div class="seg-desc">Powell / Fed Chair · FOMC rate decisions · SCOTUS vacancy · Recession 2026</div>
+        <div class="seg-vol black">$489M</div>
+        <div class="seg-vol-label">combined vol</div>
+      </div>
+      <div class="segment-card">
+        <div class="seg-label darkred">Segment D · 9%*</div>
+        <div class="seg-title">Geopolitical</div>
+        <div class="seg-desc">Iran conflict · Ceasefire · Strait of Hormuz · Ukraine · 50% liquidity haircut applied</div>
+        <div class="seg-vol darkred">$350M</div>
+        <div class="seg-vol-label">gross vol · haircut adj.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<section id="how" class="how-section">
+  <h2>How It Works</h2>
+  <div class="how-grid">
+    <div class="how-step">
+      <div class="step-num">01</div>
+      <div class="step-title">Reference basket</div>
+      <div class="step-desc">LAMP tracks 17 political event contracts across Polymarket and Kalshi, weighted by liquidity depth and open interest. Rebalanced monthly.</div>
+    </div>
+    <div class="how-step">
+      <div class="step-num">02</div>
+      <div class="step-title">Total return swap</div>
+      <div class="step-desc">Institutional swap counterparties provide synthetic exposure — no on-chain custody or crypto wallet required by investors.</div>
+    </div>
+    <div class="how-step">
+      <div class="step-num">03</div>
+      <div class="step-title">Contracts resolve</div>
+      <div class="step-desc">Each contract pays $1 (YES) or $0 (NO) on resolution. Triple-source oracle: AP, Fox News, NBC for elections. Fed.gov for macro.</div>
+    </div>
+    <div class="how-step">
+      <div class="step-num">04</div>
+      <div class="step-title">NAV updates</div>
+      <div class="step-desc">Fund NAV marks daily from composite mid prices. Resolved positions replaced at the next monthly rebalance window.</div>
+    </div>
+    <div class="how-step">
+      <div class="step-num">05</div>
+      <div class="step-title">Quarterly liquidity</div>
+      <div class="step-desc">Redemptions available quarterly with 30-day notice. Matches the real liquidity profile of the underlying prediction market contracts.</div>
+    </div>
+  </div>
+</section>
+
+<div class="disclaimer">
+  <div class="disclaimer-inner">
+    <h3>Important Disclosures</h3>
+    <p>LAMP is a reference instrument for institutional purposes only. This is not a registered investment product, a prospectus, or an offer to sell securities. Prediction market positions are not securities under applicable law. Past performance and crowd accuracy are not indicative of future results. All volume figures sourced from Polymarket and Kalshi as of April 6, 2026. For qualified institutional investors only. Subversive Capital · 2026.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Subversive Capital</div>
+  <div class="footer-links">
+    <a href="#">Our ETFs</a>
+    <a href="#">In the News</a>
+    <a href="#">Methodology</a>
+    <a href="#">Contact Us</a>
+  </div>
+  <div class="footer-copy">© 2026 Subversive Capital · All rights reserved</div>
+</footer>
+
+<script src="ticker.js"></script>
+</body>
+</html>
