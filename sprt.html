@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPRT ETF — Sports Prediction Markets</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Subversive Capital</div>
+  <div class="nav-links">
+    <a href="index.html">LAMP</a>
+    <a href="sprt.html" class="active">SPRT</a>
+    <a href="how.html">How It Works</a>
+  </div>
+  <div class="nav-icons">
+    <div class="nav-icon">&#x1D54F;</div>
+    <div class="nav-icon">in</div>
+    <div class="nav-icon">&#9654;</div>
+  </div>
+</nav>
+
+<div class="ticker-tape">
+  <div class="ticker-inner" id="ticker-inner"></div>
+</div>
+
+<!-- ── HEADER ── -->
+<section class="basket-header">
+  <div class="hypothetical-banner">This is a purely hypothetical ETF &mdash; not a real investment product</div>
+  <div class="basket-title">SPRT ETF: Sports Prediction Markets</div>
+
+  <div class="basket-meta">
+    <div class="meta-item">
+      <div class="meta-label">Date</div>
+      <div class="meta-value">Apr 6, 2026</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Instrument</div>
+      <div class="meta-value">Total Return Swap &middot; Cash Settled</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Reference</div>
+      <div class="meta-value">Polymarket CLOB + Kalshi OB + DraftKings</div>
+    </div>
+  </div>
+
+  <div class="basket-status">
+    <span class="status-badge status-confirmed">TIDAL approval: Confirmed</span>
+    <span class="status-badge status-pricing">Status: Pricing stage</span>
+  </div>
+</section>
+
+<!-- ── SUMMARY STATS ── -->
+<div class="basket-summary">
+  <div class="summary-stat">
+    <div class="summary-val">$1.42B</div>
+    <div class="summary-label">Basket notional vol</div>
+  </div>
+  <div class="summary-stat">
+    <div class="summary-val">19</div>
+    <div class="summary-label">Total contracts</div>
+  </div>
+  <div class="summary-stat">
+    <div class="summary-val">$890M+</div>
+    <div class="summary-label">Monthly sports liquidity</div>
+  </div>
+  <div class="summary-stat">
+    <div class="summary-val">$210M+</div>
+    <div class="summary-label">Futures OI live</div>
+  </div>
+  <div class="summary-stat">
+    <div class="summary-val">$10&ndash;$50M</div>
+    <div class="summary-label">Suggested notional</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!-- SEGMENT A — NFL                                           -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<section class="segment" id="segment-a">
+  <div class="segment-header seg-blue">
+    <div class="segment-name">Segment A &mdash; NFL 2026&ndash;27</div>
+    <div class="segment-weight">Est. basket weight 38%</div>
+  </div>
+
+  <div class="table-wrap">
+  <table class="segment-table">
+    <thead>
+      <tr>
+        <th class="col-num">#</th>
+        <th class="col-contract">Contract</th>
+        <th class="col-vol">Poly Vol</th>
+        <th class="col-vol">Kalshi Vol</th>
+        <th class="col-vol">Combined</th>
+        <th class="col-prob">Lead Prob.</th>
+        <th class="col-resolve">Resolves</th>
+        <th class="col-wt">Wt%</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>A1</td>
+        <td>
+          <div class="contract-name">Super Bowl LXII Winner</div>
+          <div class="contract-detail">Chiefs 14% &middot; Eagles 11% &middot; Lions 9% &middot; Bills 8%</div>
+          <div class="contract-sources"><span class="source poly">Poly</span> <span class="source kalshi">Kalshi</span></div>
+        </td>
+        <td class="num">$285M</td>
+        <td class="num">$42M</td>
+        <td class="num">$327M</td>
+        <td class="num">14&cent;</td>
+        <td>Feb '27</td>
+        <td class="num wt">14.2%</td>
+      </tr>
+      <tr>
+        <td>A2</td>
+        <td>
+          <div class="contract-name">NFL MVP 2026&ndash;27</div>
+          <div class="contract-detail">Mahomes 22% &middot; Allen 18% &middot; Hurts 12% &middot; Lamar 11%</div>
+          <div class="contract-sources"><span class="source poly">Poly</span></div>
+        </td>
+        <td class="num">$68M</td>
+        <td class="num">&mdash;</td>
+        <td class="num">$68M</td>
+        <td class="num">22&cent;</td>
+        <td>Feb '27</td>
+        <td class="num wt">4.8%</td>
+      </tr>
+      <tr>
+        <td>A3</td>
+        <td>
+          <div class="contract-name">NFL Regular Season Wins O/U (top 5 teams)</div>
+          <div class="contract-detail">Chiefs O11.5 &middot; Eagles O11.5 &middot; Lions O10.5 &middot; Bills O10.5 &middot; 49ers O10.5</div>
+          <div class="contract-sources"><span class="source poly">Poly</span> <span class="source kalshi">Kalshi</span></div>
+        </td>
+        <td class="num">$112M</td>
+        <td class="num">$18M</td>
+        <td class="num">$130M</td>
+        <td class="num">various</td>
+        <td>Jan '27</td>
+        <td class="num wt">9.2%</td>
+      </tr>
+      <tr>
+        <td>A4</td>
+        <td>
+          <div class="contract-name">AFC Champion 2026&ndash;27</div>
+          <div class="contract-detail">Chiefs 24% &middot; Bills 19% &middot; Ravens 12%</div>
+          <div class="contract-sources"><span class="source poly">Poly</span></div>
+        </td>
+        <td class="num">$52M</td>
+        <td class="num">&mdash;</td>
+        <td class="num">$52M</td>
+        <td class="num">24&cent;</td>
+        <td>Jan '27</td>
+        <td class="num wt">3.7%</td>
+      </tr>
+      <tr>
+        <td>A5</td>
+        <td>
+          <div class="contract-name">NFC Champion 2026&ndash;27</div>
+          <div class="contract-detail">Eagles 22% &middot; Lions 18% &middot; 49ers 14%</div>
+          <div class="contract-sources"><span class="source poly">Poly</span></div>
+        </td>
+        <td class="num">$48M</td>
+        <td class="num">&mdash;</td>
+        <td class="num">$48M</td>
+        <td class="num">22&cent;</td>
+        <td>Jan '27</td>
+        <td class="num wt">3.4%</td>
+      </tr>
+      <tr>
+        <td>A6</td>
+        <td>
+          <div class="contract-name">#1 Overall Draft Pick 2027</div>
+          <div class="contract-detail">Panthers 16% &middot; Giants 14% &middot; Titans 11%</div>
+          <div class="contract-sources"><span class="source poly">Poly</span></div>
+        </td>
+        <td class="num">$38M</td>
+        <td class="num">&mdash;</td>
+        <td class="num">$38M</td>
+        <td class="num">16&cent;</td>
+        <td>Apr '27</td>
+        <td class="num wt">2.7%</td>
+      </tr>
+      <tr class="subtotal-row">
+        <td></td>
+        <td>Segment A total</td>
+        <td class="num">$603M</td>
+        <td class="num">$60M</td>
+        <td class="num">$663M</td>
+        <td></td>
+        <td></td>
+        <td class="num wt">38.0%</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!-- SEGMENT B — NBA                                           -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<section class="segment" id="segment-b">
+  <div class="segment-header seg-red">
+    <div class="segment-name">Segment B &mdash; NBA 2026&ndash;27</div>
+    <div class="segment-weight">Est. basket weight 28%</div>
+  </div>
+
+  <div class="table-wrap">
+  <table class="segment-table">
+    <thead>
+      <tr>
+        <th class="col-num">#</th>
+        <th class="col-contract">Contract</th>
+        <th class="col-vol">Poly Vol</th>
+        <th class="col-vol">Kalshi Vol</th>
+        <th class="col-vol">Combined</th>
+        <th class="col-prob">Lead Prob.</th>
+        <th class="col-resolve">Resolves</th>
+        <th class="col-wt">Wt%</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>B1</td>
+        <td>
+          <div class="contract-name">NBA Champion 2027</div>
+          <div class="contract-detail">Celtics 21% &middot; Thunder 18% &middot; Nuggets 12% &middot; Knicks 9%</div>
+          <div class="contract-sources"><span class="source poly">Poly</span> <span class="source kalshi">Kalshi</span></div>
+        </td>
+        <td class="num">$198M</td>
+        <td class="num">$31M</td>
+        <td class="num">$229M</td>
+        <td class="num">21&cent;</td>
+        <td>Jun '27</td>
+        <td class="num wt">11.4%</td>
+      </tr>
+      <tr>
+        <td>B2</td>
+        <td>
+          <div class="contract-name">NBA MVP 2026&ndash;27</div>
+          <div class="contract-detail">Jokic 28% &middot; SGA 22% &middot; Luka 14% &middot; Tatum 10%</div>
+          <div class="contract-sources"><span class="source poly">Poly</span></div>
+        </td>
+        <td class="num">$54M</td>
+        <td class="num">&mdash;</td>
+        <td class="num">$54M</td>
+        <td class="num">28&cent;</td>
+        <td>May '27</td>
+        <td class="num wt">3.8%</td>
+      </tr>
+      <tr>
+        <td>B3</td>
+        <td>
+          <div class="contract-name">NBA Finals MVP 2027</div>
+          <div class="contract-detail">Tatum 18% &middot; SGA 16% &middot; Jokic 14%</div>
+          <div class="contract-sources"><span class="source poly">Poly</span></div>
+        </td>
+        <td class="num">$32M</td>
+        <td class="num">&mdash;</td>
+        <td class="num">$32M</td>
+        <td class="num">18&cent;</td>
+        <td>Jun '27</td>
+        <td class="num wt">2.3%</td>
+      </tr>
+      <tr>
+        <td>B4</td>
+        <td>
+          <div class="contract-name">NBA Regular Season Wins O/U (top 5)</div>
+          <div class="contract-detail">Celtics O54.5 &middot; Thunder O53.5 &middot; Nuggets O51.5 &middot; Knicks O50.5 &middot; Bucks O49.5</div>
+          <div class="contract-sources"><span class="source poly">Poly</span> <span class="source kalshi">Kalshi</span></div>
+        </td>
+        <td class="num">$78M</td>
+        <td class="num">$12M</td>
+        <td class="num">$90M</td>
+        <td class="num">various</td>
+        <td>Apr '27</td>
+        <td class="num wt">6.3%</td>
+      </tr>
+      <tr>
+        <td>B5</td>
+        <td>
+          <div class="contract-name">Rookie of the Year 2026&ndash;27</div>
+          <div class="contract-detail">Top 2027 draft class &middot; field market</div>
+          <div class="contract-sources"><span class="source poly">Poly</span></div>
+        </td>
+        <td class="num">$22M</td>
+        <td class="num">&mdash;</td>
+        <td class="num">$22M</td>
+        <td class="num">various</td>
+        <td>May '27</td>
+        <td class="num wt">1.5%</td>
+      </tr>
+      <tr class="subtotal-row">
+        <td></td>
+        <td>Segment B total</td>
+        <td class="num">$384M</td>
+        <td class="num">$43M</td>
+        <td class="num">$427M</td>
+        <td></td>
+        <td></td>
+        <td class="num wt">25.3%</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!-- SEGMENT C — MLB                                           -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<section class="segment" id="segment-c">
+  <div class="segment-header seg-black">
+    <div class="segment-name">Segment C &mdash; MLB 2026</div>
+    <div class="segment-weight">Est. basket weight 20%</div>
+  </div>
+
+  <div class="table-wrap">
+  <table class="segment-table">
+    <thead>
+      <tr>
+        <th class="col-num">#</th>
+        <th class="col-contract">Contract</th>
+        <th class="col-vol">Poly Vol</th>
+        <th class="col-vol">Kalshi Vol</th>
+        <th class="col-vol">Combined</th>
+        <th class="col-prob">Lead Prob.</th>
+        <th class="col-resolve">Resolves</th>
+        <th class="col-wt">Wt%</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>C1</td>
+        <td>
+          <div class="contract-name">World Series Winner 2026</div>
+          <div class="contract-detail">Dodgers 19% &middot; Yankees 14% &middot; Braves 11% &middot; Astros 9%</div>
+          <div class="contract-sources"><span class="source poly">Poly</span> <span class="source kalshi">Kalshi</span></div>
+        </td>
+        <td class="num">$142M</td>
+        <td class="num">$22M</td>
+        <td class="num">$164M</td>
+        <td class="num">19&cent;</td>
+        <td>Oct '26</td>
+        <td class="num wt">8.6%</td>
+      </tr>
+      <tr>
+        <td>C2</td>
+        <td>
+          <div class="contract-name">AL MVP 2026</div>
+          <div class="contract-detail">Judge 24% &middot; Ohtani (AL team TBD) &middot; Soto 16%</div>
+          <div class="contract-sources"><span class="source poly">Poly</span></div>
+        </td>
+        <td class="num">$28M</td>
+        <td class="num">&mdash;</td>
+        <td class="num">$28M</td>
+        <td class="num">24&cent;</td>
+        <td>Nov '26</td>
+        <td class="num wt">2.0%</td>
+      </tr>
+      <tr>
+        <td>C3</td>
+        <td>
+          <div class="contract-name">NL MVP 2026</div>
+          <div class="contract-detail">Ohtani 32% &middot; Acuna 14% &middot; Freeman 11%</div>
+          <div class="contract-sources"><span class="source poly">Poly</span></div>
+        </td>
+        <td class="num">$31M</td>
+        <td class="num">&mdash;</td>
+        <td class="num">$31M</td>
+        <td class="num">32&cent;</td>
+        <td>Nov '26</td>
+        <td class="num wt">2.2%</td>
+      </tr>
+      <tr>
+        <td>C4</td>
+        <td>
+          <div class="contract-name">MLB Home Run Leader 2026</div>
+          <div class="contract-detail">Judge 28% &middot; Ohtani 22% &middot; Stanton 8%</div>
+          <div class="contract-sources"><span class="source poly">Poly</span></div>
+        </td>
+        <td class="num">$45M</td>
+        <td class="num">&mdash;</td>
+        <td class="num">$45M</td>
+        <td class="num">28&cent;</td>
+        <td>Oct '26</td>
+        <td class="num wt">3.2%</td>
+      </tr>
+      <tr>
+        <td>C5</td>
+        <td>
+          <div class="contract-name">AL/NL Cy Young 2026</div>
+          <div class="contract-detail">Cole 18% &middot; Skenes 16% &middot; combined market</div>
+          <div class="contract-sources"><span class="source poly">Poly</span></div>
+        </td>
+        <td class="num">$24M</td>
+        <td class="num">&mdash;</td>
+        <td class="num">$24M</td>
+        <td class="num">18&cent;</td>
+        <td>Nov '26</td>
+        <td class="num wt">1.7%</td>
+      </tr>
+      <tr class="subtotal-row">
+        <td></td>
+        <td>Segment C total</td>
+        <td class="num">$270M</td>
+        <td class="num">$22M</td>
+        <td class="num">$292M</td>
+        <td></td>
+        <td></td>
+        <td class="num wt">17.7%</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════ -->
+<!-- SEGMENT D — GLOBAL SOCCER / OTHER                         -->
+<!-- ══════════════════════════════════════════════════════════ -->
+<section class="segment" id="segment-d">
+  <div class="segment-header seg-darkred">
+    <div class="segment-name">Segment D &mdash; Global Soccer + Other</div>
+    <div class="segment-weight">Est. basket weight 14%</div>
+  </div>
+
+  <div class="table-wrap">
+  <table class="segment-table">
+    <thead>
+      <tr>
+        <th class="col-num">#</th>
+        <th class="col-contract">Contract</th>
+        <th class="col-vol">Poly Vol</th>
+        <th class="col-vol">Kalshi Vol</th>
+        <th class="col-vol">Combined</th>
+        <th class="col-prob">Lead Prob.</th>
+        <th class="col-resolve">Resolves</th>
+        <th class="col-wt">Wt%</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>D1</td>
+        <td>
+          <div class="contract-name">Champions League Winner 2027</div>
+          <div class="contract-detail">Man City 18% &middot; Real Madrid 16% &middot; Arsenal 12% &middot; Bayern 10%</div>
+          <div class="contract-sources"><span class="source poly">Poly</span></div>
+        </td>
+        <td class="num">$86M</td>
+        <td class="num">&mdash;</td>
+        <td class="num">$86M</td>
+        <td class="num">18&cent;</td>
+        <td>Jun '27</td>
+        <td class="num wt">6.1%</td>
+      </tr>
+      <tr>
+        <td>D2</td>
+        <td>
+          <div class="contract-name">Premier League Champion 2026&ndash;27</div>
+          <div class="contract-detail">Arsenal 34% &middot; Man City 28% &middot; Liverpool 18%</div>
+          <div class="contract-sources"><span class="source poly">Poly</span></div>
+        </td>
+        <td class="num">$52M</td>
+        <td class="num">&mdash;</td>
+        <td class="num">$52M</td>
+        <td class="num">34&cent;</td>
+        <td>May '27</td>
+        <td class="num wt">3.7%</td>
+      </tr>
+      <tr>
+        <td>D3</td>
+        <td>
+          <div class="contract-name">FIFA Club World Cup 2025 Winner</div>
+          <div class="contract-detail">Real Madrid 24% &middot; Man City 19% &middot; Bayern 14%</div>
+          <div class="contract-sources"><span class="source poly">Poly</span></div>
+        </td>
+        <td class="num">$38M</td>
+        <td class="num">&mdash;</td>
+        <td class="num">$38M</td>
+        <td class="num">24&cent;</td>
+        <td>Jul '26</td>
+        <td class="num wt">2.7%</td>
+      </tr>
+      <tr class="subtotal-row">
+        <td></td>
+        <td>Segment D total</td>
+        <td class="num">$176M</td>
+        <td class="num">&mdash;</td>
+        <td class="num">$176M</td>
+        <td></td>
+        <td></td>
+        <td class="num wt">12.5%</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- ── BASKET TOTALS ── -->
+<section class="basket-totals">
+  <div class="totals-grid">
+    <div class="total-item">
+      <div class="total-label">Total basket vol (gross)</div>
+      <div class="total-val big">$1.42B</div>
+    </div>
+    <div class="total-item">
+      <div class="total-label">Polymarket share</div>
+      <div class="total-val">91%</div>
+    </div>
+    <div class="total-item">
+      <div class="total-label">Kalshi share</div>
+      <div class="total-val">9%</div>
+    </div>
+    <div class="total-item">
+      <div class="total-label">Total contracts</div>
+      <div class="total-val">19</div>
+    </div>
+    <div class="total-item highlight">
+      <div class="total-label">NFL dominance</div>
+      <div class="total-val accent">38% of basket</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── DISCLAIMER ── -->
+<div class="disclaimer">
+  <div class="disclaimer-inner">
+    <h3>Important Disclosures</h3>
+    <p>SPRT is a reference instrument for institutional purposes only. This is not a registered investment product, a prospectus, or an offer to sell securities. Prediction market positions are not securities under applicable law. Past performance and crowd accuracy are not indicative of future results. All volume figures are illustrative estimates sourced from Polymarket and Kalshi as of April 6, 2026. For qualified institutional investors only. Subversive Capital &middot; 2026.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Subversive Capital</div>
+  <div class="footer-links">
+    <a href="index.html">LAMP</a>
+    <a href="sprt.html">SPRT</a>
+    <a href="how.html">How It Works</a>
+    <a href="#">Contact Us</a>
+  </div>
+  <div class="footer-copy">&copy; 2026 Subversive Capital &middot; All rights reserved</div>
+</footer>
+
+<script src="ticker.js"></script>
+</body>
+</html>
